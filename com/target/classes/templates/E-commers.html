@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #tarjetasProductos .card {
+            margin-bottom: 20px;
+        }
+    </style>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #tarjetasProductos .card {
+            margin-bottom: 20px;
+        }
+    </style>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+</head>
+<body>
+<main class="container mt-4">
+    <h2>Productos</h2>
+
+    <div class="row">
+        <!-- Carrusel de los 3 productos más caros -->
+        <div class="col-md-6 mb-4">
+            <div id="carruselProductos" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Los elementos del carrusel se llenarán dinámicamente con JavaScript -->
+                </div>
+                <a class="carousel-control-prev" href="#carruselProductos" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carruselProductos" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Formulario para agregar productos -->
+        <div class="col-md-6">
+            <form id="productoForm">
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="nombre">Nombre del producto:</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="descripcion">Descripción del producto:</label>
+                        <input type="text" class="form-control" id="descripcion" required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="precio">Precio del producto:</label>
+                        <input type="number" class="form-control" id="precio" required>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="guardarProducto()">Agregar Producto</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Tarjetas de productos -->
+    <div class="row" id="tarjetasProductos"></div>
+</main>
+
+<script defer src="../js/e-commers.js"></script>
+
+<script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
